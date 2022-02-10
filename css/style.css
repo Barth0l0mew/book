@@ -1,0 +1,72 @@
+.swap-wrap {
+  margin: 0;
+  padding: 0;
+  width: 600px;
+  height: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+.slaid-image, .image, .left, .right {
+  width: 100%;
+  height: 100%;
+}
+
+.button-right, .button-left {
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  opacity: 0.8;
+}
+
+.button-left:hover, .button-right:hover {
+  opacity: 1;
+}
+
+.button-left {
+  left: 0;
+}
+
+.button-right {
+  right: 0;
+}
+
+.slaid-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-animation-name: slaid;
+          animation-name: slaid;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes slaid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slaid {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
